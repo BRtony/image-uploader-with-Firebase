@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image uploader</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="titles">
+            <h1>Upload your image</h1>
+            <p>File should be jpeg, png...</p>
+        </div>
+        <div class="dropzone">
+            <img src="image.svg" alt="">
+            <p>Drag & Drop your image here</p>
+            <input type="file" name="file" id="file" hidden area-hidden="true" accept=".png, .jpg, .jpeg" >
+        </div>
+
+        <p>Or</p>
+        <button id="select-file">Choose file</button>
+    </div>
+
+    <div class="uploading hidden">
+        <h3>Uploading...</h3>
+        <progress id="progress" value="0" max="100"></progress>
+    </div>
+
+    <div class="upload-success hidden">
+        <div class="success-message">
+            <i class="material-icons" id="success-icon">check_circle</i>
+            <h3>Uploaded Successfully!</h3>
+        </div>
+        <img id="uploaded-image" src="" alt="">
+
+        <div class="image-link-container">
+            <input type="text" id="image-link">
+                <button id="copy-link-button">Copy link</button>
+            </input>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+
+</body>
+
+</html>
