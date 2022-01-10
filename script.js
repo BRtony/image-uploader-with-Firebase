@@ -7,12 +7,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-storage.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyADllMO8jHFwuPQi7pUlkjzvb4_ezaCsj0",
-  authDomain: "image-uploader-9f474.firebaseapp.com",
-  projectId: "image-uploader-9f474",
-  storageBucket: "image-uploader-9f474.appspot.com",
-  messagingSenderId: "410374851835",
-  appId: "1:410374851835:web:705f4224670aab61bc345e",
+  // your firebase config here
 };
 
 // Initialize Firebase
